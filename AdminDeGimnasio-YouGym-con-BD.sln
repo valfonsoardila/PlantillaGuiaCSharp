@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{DDACE138-B2E1-43FB-AE01-E55068E47A0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consola", "..\..\..\..\Jaime\source\repos\AdminGimnasio-ArchivosPlanoTxt\Consola\Consola.csproj", "{6B483AD1-1C08-4666-94B2-F5978B9836BF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{DDACE138-B2E1-43FB-AE01-E55068E47A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDACE138-B2E1-43FB-AE01-E55068E47A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDACE138-B2E1-43FB-AE01-E55068E47A0C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B483AD1-1C08-4666-94B2-F5978B9836BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B483AD1-1C08-4666-94B2-F5978B9836BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B483AD1-1C08-4666-94B2-F5978B9836BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B483AD1-1C08-4666-94B2-F5978B9836BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
