@@ -18,6 +18,11 @@ namespace Logica
             conexion = new ConnectionManager(connectionString);
             repositorio = new ClienteRepository(conexion);
         }
+
+        public ClienteService()
+        {
+        }
+
         //<Validaciones por mensajes de botones de los formularios>
         public string ValidarIndiceMasaCorporal(Cliente cliente)
         {
