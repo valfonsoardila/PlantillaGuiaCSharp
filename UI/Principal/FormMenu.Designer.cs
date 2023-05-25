@@ -47,7 +47,7 @@ namespace UI
             panelSelectionCaja = new Panel();
             subMenuUsuario = new Panel();
             btnAdministrador = new FontAwesome.Sharp.IconButton();
-            btnEmpleados = new FontAwesome.Sharp.IconButton();
+            btnEntrenador = new FontAwesome.Sharp.IconButton();
             btnClientes = new FontAwesome.Sharp.IconButton();
             btnGestionUsurio = new FontAwesome.Sharp.IconButton();
             btnGestionCaja = new FontAwesome.Sharp.IconButton();
@@ -360,7 +360,7 @@ namespace UI
             // 
             subMenuUsuario.BackColor = SystemColors.ControlLight;
             subMenuUsuario.Controls.Add(btnAdministrador);
-            subMenuUsuario.Controls.Add(btnEmpleados);
+            subMenuUsuario.Controls.Add(btnEntrenador);
             subMenuUsuario.Controls.Add(btnClientes);
             subMenuUsuario.Dock = DockStyle.Top;
             subMenuUsuario.Location = new Point(0, 201);
@@ -391,29 +391,31 @@ namespace UI
             btnAdministrador.Text = "Administrador";
             btnAdministrador.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnAdministrador.UseVisualStyleBackColor = false;
+            btnAdministrador.Click += btnAdministrador_Click;
             // 
-            // btnEmpleados
+            // btnEntrenador
             // 
-            btnEmpleados.BackColor = Color.FromArgb(64, 1, 1);
-            btnEmpleados.Dock = DockStyle.Top;
-            btnEmpleados.FlatAppearance.BorderSize = 0;
-            btnEmpleados.FlatAppearance.MouseDownBackColor = Color.Black;
-            btnEmpleados.FlatAppearance.MouseOverBackColor = Color.FromArgb(62, 178, 191);
-            btnEmpleados.FlatStyle = FlatStyle.Flat;
-            btnEmpleados.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEmpleados.ForeColor = SystemColors.ButtonHighlight;
-            btnEmpleados.IconChar = FontAwesome.Sharp.IconChar.AngleRight;
-            btnEmpleados.IconColor = Color.White;
-            btnEmpleados.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnEmpleados.IconSize = 10;
-            btnEmpleados.Location = new Point(0, 43);
-            btnEmpleados.Margin = new Padding(4, 3, 4, 3);
-            btnEmpleados.Name = "btnEmpleados";
-            btnEmpleados.Size = new Size(217, 45);
-            btnEmpleados.TabIndex = 12;
-            btnEmpleados.Text = "Entrenador";
-            btnEmpleados.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnEmpleados.UseVisualStyleBackColor = false;
+            btnEntrenador.BackColor = Color.FromArgb(64, 1, 1);
+            btnEntrenador.Dock = DockStyle.Top;
+            btnEntrenador.FlatAppearance.BorderSize = 0;
+            btnEntrenador.FlatAppearance.MouseDownBackColor = Color.Black;
+            btnEntrenador.FlatAppearance.MouseOverBackColor = Color.FromArgb(62, 178, 191);
+            btnEntrenador.FlatStyle = FlatStyle.Flat;
+            btnEntrenador.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEntrenador.ForeColor = SystemColors.ButtonHighlight;
+            btnEntrenador.IconChar = FontAwesome.Sharp.IconChar.AngleRight;
+            btnEntrenador.IconColor = Color.White;
+            btnEntrenador.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnEntrenador.IconSize = 10;
+            btnEntrenador.Location = new Point(0, 43);
+            btnEntrenador.Margin = new Padding(4, 3, 4, 3);
+            btnEntrenador.Name = "btnEntrenador";
+            btnEntrenador.Size = new Size(217, 45);
+            btnEntrenador.TabIndex = 12;
+            btnEntrenador.Text = "Entrenador";
+            btnEntrenador.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnEntrenador.UseVisualStyleBackColor = false;
+            btnEntrenador.Click += btnEntrenador_Click;
             // 
             // btnClientes
             // 
@@ -437,6 +439,7 @@ namespace UI
             btnClientes.Text = "Clientes";
             btnClientes.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnClientes.UseVisualStyleBackColor = false;
+            btnClientes.Click += btnClientes_Click;
             // 
             // btnGestionUsurio
             // 
@@ -812,7 +815,7 @@ namespace UI
         private Panel panelSelectionUsuario;
         private Panel panelSelectionCaja;
         private Panel subMenuUsuario;
-        private FontAwesome.Sharp.IconButton btnEmpleados;
+        private FontAwesome.Sharp.IconButton btnEntrenador;
         private FontAwesome.Sharp.IconButton btnClientes;
         private FontAwesome.Sharp.IconButton btnGestionUsurio;
         private FontAwesome.Sharp.IconButton btnGestionCaja;

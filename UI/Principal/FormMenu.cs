@@ -171,9 +171,11 @@ namespace UI
             btnOpenSidebar.Visible = false;
             btnCloseSidebar.Visible = true;
             labelLogoName.Visible = true;
-            btnGestionCaja.Text = "Gestion de secretaría";
-            btnGestionUsurio.Text = "Gestion de tesoreria";
-            btnGestionProductos.Text = "Gestion de Factura";
+            btnGestionCaja.Text = "Caja registradora";
+            btnGestionUsurio.Text = "Usuarios";
+            btnGestionMembresia.Text = "Membresias";
+            btnGestionProductos.Text = "Productos";
+            btnGestionPlanesDeEjercicio.Text = "Planes de ejercicio";
             btnGestionPlanesDeEjercicio.Text = "Ajustes";
             panelSidebarClose.Visible = false;
         }
@@ -201,6 +203,21 @@ namespace UI
             panelSelectionPlanes.Visible = false;
             panelSelectionProductos.Visible = false;
             panelSelectionAjustes.Visible = false;
+        }
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            CerrarFormulariosCiclo();
+            AbrirFormulario<FormGestionCliente>();
+        }
+        private void btnEntrenador_Click(object sender, EventArgs e)
+        {
+            CerrarFormulariosCiclo();
+            AbrirFormulario<FormGestionEntrenador>();
+        }
+        private void btnAdministrador_Click(object sender, EventArgs e)
+        {
+            CerrarFormulariosCiclo();
+            AbrirFormulario<FormGestionAdministrador>();
         }
         private void btnGestionMembresia_Click(object sender, EventArgs e)
         {
